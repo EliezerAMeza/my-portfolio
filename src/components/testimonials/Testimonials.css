@@ -3,7 +3,7 @@
 }
 
 .testimonial__card {
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
@@ -27,11 +27,11 @@
 
 /* ?=============== SWIPER ===============? */
 .swiper-pagination-bullet {
-  background-color: var(--text-color) !important;
+  background-color: var(--color-base-light) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--title-color) !important;
+  background-color: var(--color-principal) !important;
 }
 
 /* ?=============== BREAKPOINTS =============== ?*/

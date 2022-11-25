@@ -17,7 +17,7 @@
 }
 
 .about__box {
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   text-align: center;
@@ -26,7 +26,7 @@
 
 .about__icon {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--color-principal);
   margin-bottom: var(--mb-0-5);
 }
 

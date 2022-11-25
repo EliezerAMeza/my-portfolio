@@ -4,7 +4,7 @@ import Info from "./Info";
 
 import "./About.css";
 
-import AboutImg from "../../assets/img/about.jpg";
+import AboutImg from "../../assets/img/me.webp";
 
 import CV from "../../assets/docs/John-Cv.pdf";
 

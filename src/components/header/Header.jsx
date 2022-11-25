@@ -20,52 +20,45 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="" className="nav__logo">
-          Smith
+        <a href="/" className="nav__logo">
+          EMZ | Eliezer A Meza
         </a>
 
-        {/* <div className="nav__menu"> */}
         <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              {/* a[href='#'].nav__link */}
               <a href="#home" className="nav__link active-link">
-                <i className="uil uil-estate nav__icon"></i> Home
+                <i className="uil uil-estate nav__icon"></i> Inicio
               </a>
             </li>
 
             <li className="nav__item">
-              {/* a[href='#'].nav__link */}
               <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> Acerca de mi
               </a>
             </li>
 
             <li className="nav__item">
-              {/* a[href='#'].nav__link */}
               <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon"></i> Skills
+                <i className="uil uil-file-alt nav__icon"></i> Conocimientos
               </a>
             </li>
 
-            <li className="nav__item">
-              {/* a[href='#'].nav__link */}
+            {/* <li className="nav__item">
               <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
-              {/* a[href='#'].nav__link */}
               <a href="#portfolio" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
+                <i className="uil uil-scenery nav__icon"></i> Mi trabajo
               </a>
             </li>
 
             <li className="nav__item">
-              {/* a[href='#'].nav__link */}
               <a href="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i> Contact
+                <i className="uil uil-message nav__icon"></i> Contacto
               </a>
             </li>
           </ul>

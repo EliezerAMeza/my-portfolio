@@ -18,11 +18,11 @@
 
 .home__social-icon {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--color-principal);
 }
 
 .home__social-icon:hover {
-  color: var(--title-color-dark);
+  color: var(--color-principal-alt);
 }
 
 .home__title {
@@ -50,10 +50,10 @@
   left: 0;
   top: 1rem;
 
-  width: 70px;
+  width: 60px;
   height: 1px;
 
-  background-color: var(--text-color);
+  background-color: var(--color-base-light);
 }
 
 .home__description {
@@ -65,16 +65,42 @@
   width: 300px;
   height: 300px;
 
-  background: url("../../assets/img/profile.jpg") center/cover no-repeat;
-  box-shadow: inset 0 0 0 9px rgb(0 0 0 / 30%);
-
-  border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  background: url("../../assets/img/me.webp") center/cover no-repeat;
 
   order: 3;
 
-  justify-self: center;
+  transition: 0.3s;
 
-  animation: profile__animate 10s ease infinite 2s;
+  justify-self: center;
+}
+
+.home__img.profile__entrance {
+  position: relative;
+  /* overflow: hidden; */
+  /* opacity: 0; */
+
+  animation: profile__entrance 4s ease forwards;
+}
+
+.home__img.profile__animate {
+  box-shadow: inset 0 0 0 8px rgb(255 255 255 / 40%);
+  animation: profile__animate 10s ease infinite;
+}
+
+@keyframes profile__entrance {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    border-radius: 0%;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 10%);
+    opacity: 1;
+  }
+
+  100% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 40%);
+  }
 }
 
 @keyframes profile__animate {
@@ -111,7 +137,7 @@
 }
 
 .home__scroll-name {
-  color: var(--title-color);
+  color: var(--color-principal);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;

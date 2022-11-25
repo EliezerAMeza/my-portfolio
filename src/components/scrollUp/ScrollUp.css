@@ -6,7 +6,7 @@
   padding: 0.3rem 0.5rem;
   border-radius: 0.4rem;
 
-  background-color: var(--title-color);
+  background-color: var(--color-principal);
   opacity: 0.8rem;
   transition: 0.4s;
 
@@ -15,12 +15,12 @@
 
 .scrollUp:hover {
   font-size: 1.5rem;
-  color: var(--container-color);
+  color: var(--color-principal-dark);
 }
 
 .scrollUp__icon {
   font-size: 1.5rem;
-  color: var(--container-color);
+  color: var(--color-principal-dark);
 }
 
 .show-scroll {

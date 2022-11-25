@@ -18,14 +18,14 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: var(--color-base-dark);
+  color: var(--color-base-light);
 }
 
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  color: var(--color-principal);
   font-weight: var(--font-semi-bold);
 }
 
@@ -55,7 +55,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--color-principal);
 }
 
 .section__subtitle {
@@ -83,16 +83,19 @@ img {
 
 /* ?=============== BUTTONS =============== ?*/
 .button {
-  display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: .75rem 2rem;
   border-radius: 1rem;
+
+  background-color: var(--color-principal);
+
   font-weight: var(--font-medium);
+  color: var(--color-base-light);
+
+  display: inline-block;
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--color-principal-alt);
 }
 
 .button__icon {

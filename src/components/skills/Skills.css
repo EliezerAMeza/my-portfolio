@@ -8,7 +8,7 @@
   padding: 2rem 4rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1.25rem;
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
 }
 
 .skills__title {
@@ -37,7 +37,7 @@
 
 .skills .bax-badge-check {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--color-principal);
 }
 
 .skills__name {

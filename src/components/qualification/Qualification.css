@@ -14,13 +14,13 @@
 
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  color: var(--title-color);
+  color: var(--color-principal);
 
   cursor: pointer;
 }
 
 .qualification__button:hover {
-  color: var(--title-color-dark);
+  color: var(--color-principal-alt);
 }
 
 .qualification__icon {
@@ -29,7 +29,7 @@
 }
 
 .qualification__active {
-  color: var(--title-color-dark);
+  color: var(--color-principal-alt);
 }
 
 .qualification__sections {
@@ -72,7 +72,7 @@
   height: 13px;
   border-radius: 50%;
 
-  background-color: var(--text-color);
+  background-color: var(--color-base-light);
 
   display: inline-block;
 }
@@ -81,7 +81,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: var(--color-base-light);
   transform: translate(6px, -7px);
 }
 

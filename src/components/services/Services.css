@@ -8,13 +8,13 @@
   position: relative;
   padding: 6rem 0 2rem 2.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
 }
 
 .services__icon {
   margin-bottom: var(--mb-1);
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--color-principal);
   display: block;
 }
 
@@ -26,7 +26,7 @@
 
 .services__button {
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--color-principal);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -76,7 +76,7 @@
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
 
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
 
   transform: scale(0.8);
 
@@ -92,7 +92,7 @@
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--color-principal);
   cursor: pointer;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .services__modal-icon {
-  color: var(--title-color);
+  color: var(--color-principal);
   font-size: 1.1rem;
 }
 

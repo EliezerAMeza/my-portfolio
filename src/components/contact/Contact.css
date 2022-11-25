@@ -23,14 +23,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
 
-  background-color: var(--container-color);
+  background-color: var(--color-principal-dark);
 
   text-align: center;
 }
 
 .contact__card-icon {
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--color-principal);
   margin-bottom: var(--mb-0-25);
 }
 
@@ -49,7 +49,7 @@
 }
 
 .contact__button {
-  color: var(--text-color);
+  color: var(--color-base-light);
   font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
@@ -84,7 +84,7 @@
   height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.3);
   background: none;
-  color: var(--text-color);
+  color: var(--color-base-light);
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1;
@@ -96,7 +96,7 @@
   left: 1.25rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
+  background-color: var(--color-base-dark);
   z-index: 10;
 }
 

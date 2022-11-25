@@ -23,9 +23,7 @@ function App() {
         <Home />
         <About />
         <Skills />
-        <Services />
         <Qualification />
-        <Testimonials />
         <Contact />
       </main>
 
