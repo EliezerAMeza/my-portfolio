@@ -16,7 +16,7 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="container-all" id="container-all">
       <Header />
 
       <main className="main">
@@ -29,7 +29,7 @@ function App() {
 
       <Footer />
       <ScrollUp />
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,9 @@
+.container-all {
+  max-height: 100vh !important;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.container-all::-webkit-scrollbar {
+  width: 0px;
+}

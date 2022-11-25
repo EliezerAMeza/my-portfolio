@@ -5,7 +5,7 @@ function Frontend() {
     <div className="skills__content">
       <h3 className="skills__title">Frontend developer</h3>
 
-      <div className="skills__box">
+      {/* <div className="skills__box">
         <div className="skills__group">
           <article className="skills__data">
             <i className="bx bx-badge-check"></i>
@@ -35,9 +35,7 @@ function Frontend() {
           </article>
         </div>
 
-
-
-      <div className="skills__group">
+        <div className="skills__group">
           <article className="skills__data">
             <i className="bx bx-badge-check"></i>
 
@@ -65,11 +63,8 @@ function Frontend() {
             </div>
           </article>
         </div>
-      </div>
-
+      </div> */}
     </div>
-
-
   );
 }
 

@@ -1,28 +1,37 @@
 import React from "react";
 
+import { BiJoystick } from "react-icons/bi";
+import { BsEmojiLaughingFill } from "react-icons/bs";
+
 function Info() {
   return (
     <div className="about__info grid">
       <div className="about__box">
-        <i class="bx bx-award about__icon"></i>
+        <BiJoystick className="about__icon" />
 
-        <h3 className="about__title">Experience</h3>
-        <span className="about__subtitle">8 Years Working</span>
+        <h3 className="about__title">Lorem, ipsum dolor.</h3>
       </div>
 
       <div className="about__box">
-        <i class="bx bx-briefcase-alt about__icon"></i>
+        <BiJoystick className="about__icon" />
 
-        <h3 className="about__title">Completed</h3>
-        <span className="about__subtitle">48 + Projects</span>
+        <h3 className="about__title">Lorem, ipsum dolor.</h3>
       </div>
 
       <div className="about__box">
-        <i class="bx bx-support about__icon"></i>
+        <BiJoystick className="about__icon" />
 
-        <h3 className="about__title">Support</h3>
-        <span className="about__subtitle">Online 24/7</span>
+        <h3 className="about__title">Lorem, ipsum dolor.</h3>
       </div>
+
+      {/* 
+      <div className="about__box">
+        <UilDiaryAlt className="about__icon" />
+
+        <h3 className="about__title">Filosofia</h3>
+        <span className="about__subtitle">Aprendizaje constante</span>
+      </div> 
+      */}
     </div>
   );
 }

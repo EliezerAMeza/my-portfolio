@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Header.css";
 
@@ -7,15 +7,23 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   // ?-- change backgroud header
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
 
-    if (this.scrollY >= 200) {
-      header.classList.add("scroll-header");
-    } else {
-      header.classList.remove("scroll-header");
-    }
-  });
+  useEffect(() => {
+    const overview = document.getElementById("container-all");
+
+    overview.addEventListener("scroll", function (e) {
+      const header = document.querySelector(".header");
+
+      const totalScroll = overview.scrollHeight - overview.clientHeight;
+      const currentScroll = overview.scrollTop;
+
+      if (currentScroll >= 200) {
+        header.classList.add("scroll-header");
+      } else {
+        header.classList.remove("scroll-header");
+      }
+    });
+  }, []);
 
   return (
     <header className="header">

@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./Footer.css";
 
 function Footer() {
+  useEffect(() => {
+    const overview = document.getElementById("container-all");
+
+    overview.addEventListener("scroll", function (e) {
+      const footer = document.querySelector(".footer");
+
+      const totalScroll = overview.scrollHeight - overview.clientHeight;
+      const currentScroll = overview.scrollTop;
+
+      if (currentScroll >= totalScroll) {
+        footer.classList.add("scroll-footer");
+      }
+    });
+  }, []);
+
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -35,7 +50,9 @@ function Footer() {
             <i className="bx bxl-twitter"></i>
           </a>
         </div>
-        <div className="footer__copy">&copy; _________ | All rigths reserved</div>
+        <div className="footer__copy">
+          &copy; _________ | All rigths reserved
+        </div>
       </div>
     </footer>
   );
