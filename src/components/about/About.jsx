@@ -13,7 +13,7 @@ import CV from "../../assets/docs/John-Cv.pdf";
 function About() {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">Acerca de mi</h2>
+      <h2 className="section__title">Sobre mi</h2>
       <span className="section__subtitle">Mi introduccion</span>
 
       <div className="about__container container grid">

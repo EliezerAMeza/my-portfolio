@@ -3,14 +3,24 @@ import React, { useState } from "react";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 
+// ? REACT ICONS
 import { ImHtmlFive, ImDatabase } from "react-icons/im";
-
 import { CgFigma } from "react-icons/cg";
+
+// ? IMG
+import skillImage_html from "../../assets/img/html.png";
+import skillImage_css from "../../assets/img/css.png";
+import skillImage_js from "../../assets/img/js.png";
+import skillImage_sass from "../../assets/img/sass.png";
+import skillImage_angular from "../../assets/img/angular.png";
+import skillImage_react from "../../assets/img/react.png";
+import skillImage_pyton from "../../assets/img/pyton.png";
+import skillImage_postgreSQL from "../../assets/img/postgreSQL.png";
 
 import "./Skills.css";
 
 function Skills() {
-  const [tabCurrent, setTabCurrent] = useState(2);
+  const [tabCurrent, setTabCurrent] = useState(1);
 
   const showTab = (_index) => {
     setTabCurrent(_index);
@@ -61,11 +71,7 @@ function Skills() {
           </div>
         </div>
 
-        {/* <Frontend /> */}
-        {/* <Backend /> */}
-
         <div className="skills__sections">
-          {/* <div className="skills__content skills__content-active"> */}
           <div
             className={
               tabCurrent === 1
@@ -75,10 +81,7 @@ function Skills() {
           >
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/frontend/html.png"
-                  alt="html"
-                />
+                <img src={skillImage_html} alt="html" />
                 <tool-tip role="tool-tip">
                   <h4>HTML</h4>
                   <h5>intermedio</h5>
@@ -88,7 +91,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img src="/src/assets/img/skills/frontend/css.png" alt="css" />
+                <img src={skillImage_css} alt="css" />
 
                 <tool-tip role="tool-tip">
                   <h4>CSS</h4>
@@ -99,7 +102,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img src="/src/assets/img/skills/frontend/js.png" alt="js" />
+                <img src={skillImage_js} alt="js" />
 
                 <tool-tip role="tool-tip">
                   <h4>javascript</h4>
@@ -110,10 +113,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/frontend/sass.png"
-                  alt="sass"
-                />
+                <img src={skillImage_sass} alt="sass" />
 
                 <tool-tip role="tool-tip">
                   <h4>SASS</h4>
@@ -124,10 +124,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/frontend/angular.png"
-                  alt="angular"
-                />
+                <img src={skillImage_angular} alt="angular" />
 
                 <tool-tip role="tool-tip">
                   <h4>Angular</h4>
@@ -138,10 +135,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/frontend/react.png"
-                  alt="react"
-                />
+                <img src={skillImage_react} alt="react" />
 
                 <tool-tip role="tool-tip">
                   <h4>React</h4>
@@ -160,10 +154,7 @@ function Skills() {
           >
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/backend/pyton.png"
-                  alt="pyton"
-                />
+                <img src={skillImage_pyton} alt="pyton" />
 
                 <tool-tip role="tool-tip">
                   <h4>Pyton</h4>
@@ -174,10 +165,7 @@ function Skills() {
 
             <div className="skills__card">
               <div className="skills__card__icon">
-                <img
-                  src="/src/assets/img/skills/backend/postgreSQL.png"
-                  alt="postgreSQL"
-                />
+                <img src={skillImage_postgreSQL} alt="postgreSQL" />
 
                 <tool-tip role="tool-tip">
                   <h4>postgreSQL</h4>

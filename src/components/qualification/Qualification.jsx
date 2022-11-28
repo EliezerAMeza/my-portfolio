@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { BsFillCalendarFill } from "react-icons/bs";
+
 import "./Qualification.css";
 
 function Qualification() {
@@ -11,8 +13,8 @@ function Qualification() {
 
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personel journey</span>
+      <h2 className="section__title">Formacion</h2>
+      <span className="section__subtitle">Mi viaje personal</span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
@@ -26,7 +28,7 @@ function Qualification() {
             onClick={() => setTabCurrent(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            Educacion
           </div>
 
           <div
@@ -38,7 +40,7 @@ function Qualification() {
             onClick={() => setTabCurrent(2)}
           >
             <i class="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+            Experiencia
           </div>
         </div>
 
@@ -52,80 +54,30 @@ function Qualification() {
             }
           >
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Desing</h3>
+              <div className="qualification__data__content">
+                <h3 className="qualification__title">Ingenieria de sistemas</h3>
 
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  <a
+                    href="https://www.portalunimar.unimar.edu.ve"
+                    target="_target"
+                    className="qualification__link"
+                  >
+                    UNIMAR - Venezuela
+                  </a>
                 </span>
 
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021 - Present
+                  <BsFillCalendarFill /> 2018 - Presente
                 </div>
               </div>
 
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">Art Director</h3>
-
-                <span className="qualification__subtitle">
-                  Spain - Institute
-                </span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2021
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Development</h3>
-
-                <span className="qualification__subtitle">
-                  Spain - Institute
-                </span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2021
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
+              <div className="qualification__indicator">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
 
-              <div>
-                <h3 className="qualification__title">UX Expert</h3>
-
-                <span className="qualification__subtitle">
-                  Spain - Institute
-                </span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2017 - 2018
-                </div>
-              </div>
+              <div className="qualification__void"></div>
             </div>
           </div>
 
@@ -137,60 +89,51 @@ function Qualification() {
             }
           >
             <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">Product Desingner</h3>
+              <div className="qualification__data__content">
+                <h3 className="qualification__title">Programador Frontend</h3>
 
                 <span className="qualification__subtitle">
-                  Microsoft - Spain
+                  <a
+                    href="https://www.grupospartan.com/"
+                    target="_target"
+                    className="qualification__link"
+                  >
+                     Spartan Techs S.A
+                  </a>
                 </span>
 
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2021 - Present
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">UX Desingner</h3>
-
-                <span className="qualification__subtitle">
-                  Apple Inc - Spain
-                </span>
-
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                  <BsFillCalendarFill /> 2021 - Presente
                 </div>
               </div>
 
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
+              <div className="qualification__indicator">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
 
-              <div>
-                <h3 className="qualification__title">Web Desingner</h3>
+              <div className="qualification__void"></div>
+            </div>
 
-                <span className="qualification__subtitle">Figma - Spain</span>
+            <div className="qualification__data">
+              <div className="qualification__data__content">
+                <h3 className="qualification__title">
+                  Programador Jr Frontend
+                </h3>
+
+                <span className="qualification__subtitle">BeeLettrs S.A</span>
 
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2021
+                  <BsFillCalendarFill /> 2019 - 2021
                 </div>
               </div>
+
+              <div className="qualification__indicator">
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+
+              <div className="qualification__void"></div>
             </div>
           </div>
         </div>
@@ -200,3 +143,62 @@ function Qualification() {
 }
 
 export default Qualification;
+
+/* 
+<div className="qualification__data">
+<div></div>
+<div>
+  <span className="qualification__rounder"></span>
+  <span className="qualification__line"></span>
+</div>
+
+<div>
+  <h3 className="qualification__title">Product Desingner</h3>
+
+  <span className="qualification__subtitle">
+    Microsoft - Spain
+  </span>
+
+  <div className="qualification__calender">
+    <i className="uil uil-calendar-alt"></i> 2021 - Present
+  </div>
+</div>
+</div>
+
+<div className="qualification__data">
+<div>
+  <h3 className="qualification__title">UX Desingner</h3>
+
+  <span className="qualification__subtitle">
+    Apple Inc - Spain
+  </span>
+
+  <div className="qualification__calender">
+    <i className="uil uil-calendar-alt"></i> 2020 - 2021
+  </div>
+</div>
+
+<div>
+  <span className="qualification__rounder"></span>
+  <span className="qualification__line"></span>
+</div>
+</div>
+
+<div className="qualification__data">
+<div></div>
+<div>
+  <span className="qualification__rounder"></span>
+  <span className="qualification__line"></span>
+</div>
+
+<div>
+  <h3 className="qualification__title">Web Desingner</h3>
+
+  <span className="qualification__subtitle">Figma - Spain</span>
+
+  <div className="qualification__calender">
+    <i className="uil uil-calendar-alt"></i> 2018 - 2021
+  </div>
+</div>
+</div>
+*/

@@ -16,11 +16,13 @@
   display: grid;
   grid-template-columns: 300px;
   row-gap: 1rem;
+  /* justify-items: center; */
 }
 
 .contact__card {
+  min-width: max(70%, 200px);
   padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* border: 2px solid var(--color-principal-dark); */
   border-radius: 0.75rem;
 
   background-color: var(--color-principal-dark);
@@ -74,6 +76,8 @@
   position: relative;
   margin-bottom: var(--mb-2);
   height: 4rem;
+  border: 2px solid var(--color-principal-dark);
+  border-radius: 0.75rem;
 }
 
 .contact__form-input {
@@ -92,7 +96,7 @@
 
 .contact__form-tag {
   position: absolute;
-  top: -0.75rem;
+  top: -0.85rem;
   left: 1.25rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
@@ -106,6 +110,36 @@
 
 .contact__form-area textarea {
   resize: none;
+}
+
+.toast {
+  padding: 0.5rem 2rem;
+  background-color: var(--color-base-middle);
+
+  color: var(--color-base-light);
+  border-radius: 0.75rem;
+
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+
+
+  animation: toastAnimation 3s ease forwards;
+}
+
+@keyframes toastAnimation {
+  0% {
+    bottom: -4rem;
+  }
+  10% {
+    bottom: 1rem;
+  }
+  90% {
+    bottom: 1rem;
+  }
+  100% {
+    bottom: -4rem;
+  }
 }
 
 /* ?=============== BREAKPOINTS =============== ?*/
@@ -134,7 +168,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    
   .contact__info {
     grid-template-columns: 1fr;
   }

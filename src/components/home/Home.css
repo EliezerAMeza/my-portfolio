@@ -4,10 +4,17 @@
 
 .home__content {
   padding-top: 5.5rem;
+  padding-bottom: 2rem;
   grid-template-columns: 116px 1fr 1fr;
   column-gap: 2rem;
 
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .home__content {
+    padding-bottom: 10rem;
+  }
 }
 
 .home__social {
@@ -99,8 +106,7 @@
   }
   50% {
     border-radius: 0%;
-    
-    
+
     opacity: 1;
   }
 
@@ -195,7 +201,8 @@
     grid-template-columns: 0.5fr 3fr;
     /* justify-items: center; */
 
-    margin-top: 3.5rem;
+    /* margin-top: .5rem; */
+    padding-top: 3rem;
   }
 
   .home__img {

@@ -26,13 +26,14 @@
 
 .about__icon {
   font-size: 2.5rem;
-  color: var(--color-principal);
+  color: var(--color-base-light);
   margin-bottom: var(--mb-0-5);
 }
 
 .about__title {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
+  color: var(--color-base-light);
 }
 
 .about__subtitle {

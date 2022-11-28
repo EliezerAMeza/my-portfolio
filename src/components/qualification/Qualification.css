@@ -49,7 +49,22 @@
 .qualification__data {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
+  grid-template-areas: "void indicator data";
   column-gap: 1.5rem;
+}
+
+.qualification__data:nth-child(odd) {
+  grid-template-areas: "data indicator void";
+}
+
+.qualification__data .qualification__data__content {
+  grid-area: data;
+}
+.qualification__data .qualification__indicator {
+  grid-area: indicator;
+}
+.qualification__data .qualification__void {
+  grid-area: void;
 }
 
 .qualification__title {
@@ -61,6 +76,17 @@
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.qualification__link {
+  color: var(--color-principal);
+  /* color: red; */
+
+  transition: 0.1s;
+}
+
+.qualification__link:hover {
+  color: var(--color-principal-dark);
 }
 
 .qualification__calendar {

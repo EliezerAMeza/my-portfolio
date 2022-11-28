@@ -42,7 +42,7 @@ function Header() {
 
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> Acerca de mi
+                <i className="uil uil-user nav__icon"></i> Sobre mi
               </a>
             </li>
 

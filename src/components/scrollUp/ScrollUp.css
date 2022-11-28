@@ -1,26 +1,30 @@
 .scrollUp {
   position: fixed;
   right: 2rem;
-  bottom: -20%;
+  bottom: -50px;
 
-  padding: 0.3rem 0.5rem;
+  width: 40px;
+  height: 40px;
+
   border-radius: 0.4rem;
 
-  background-color: var(--color-principal);
-  opacity: 0.8rem;
+  background-color: var(--color-principal-dark);
+
+  font-size: 1.5rem;
+  color: var(--color-principal-light);
+
+  opacity: 0.8;
   transition: 0.4s;
 
   z-index: var(--z-tooltip);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scrollUp:hover {
-  font-size: 1.5rem;
-  color: var(--color-principal-dark);
-}
-
-.scrollUp__icon {
-  font-size: 1.5rem;
-  color: var(--color-principal-dark);
+  background-color: var(--color-principal);
 }
 
 .show-scroll {
