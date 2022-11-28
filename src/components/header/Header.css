@@ -21,7 +21,12 @@
 }
 
 .nav__logo {
+  color: var(--color-principal);
+}
+
+.nav__logo i {
   color: var(--color-base-light);
+  font-style: normal;
 }
 
 .nav__toggle {
@@ -106,6 +111,7 @@
 
   .nav__menu.show-menu {
     bottom: 0;
+    border-top: 2px solid var(--color-principal);
   }
 
   .nav__list {
@@ -115,13 +121,15 @@
   }
 
   .nav__icon {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: var(--mb-0-5);
+    color: var(--color-principal)
   }
 
   .nav__close {
     position: absolute;
     right: 1.3rem;
-    bottom: 0.5rem;
+    bottom: 0.8rem;
 
     font-size: 1.5rem;
     cursor: pointer;

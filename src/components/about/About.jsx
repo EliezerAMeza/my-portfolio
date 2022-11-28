@@ -8,7 +8,7 @@ import { UilFileDownload } from "@iconscout/react-unicons";
 
 import AboutImg from "../../assets/img/me.webp";
 
-import CV from "../../assets/docs/John-Cv.pdf";
+import CV from "../../assets/docs/eliezeraMeza-CV.pdf";
 
 function About() {
   return (

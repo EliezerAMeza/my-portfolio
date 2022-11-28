@@ -5,7 +5,9 @@ import Toast from "./Toast";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutgoingMail } from "react-icons/md";
-import { UilMessage } from "@iconscout/react-unicons";
+import { RiSendPlaneFill } from "react-icons/ri";
+
+
 
 // ?=============== EMAILJS
 import emailjs from "@emailjs/browser";
@@ -28,6 +30,7 @@ function Contact() {
       .then(
         (result) => {
           //   console.log(result.text);
+          handleShowToast();
         },
         (error) => {
           console.log(error);
@@ -82,10 +85,7 @@ function Contact() {
               <h3 className="contact__card-title">E-mail</h3>
               <span className="contact__card-data">eameza1302@gmail.com</span>
 
-              <a
-                href="mailto:eameza1302@gmail.com"
-                className="contact__button"
-              >
+              <a href="mailto:eameza1302@gmail.com" className="contact__button">
                 Escribeme
                 <AiOutlineArrowRight className="contact__button-icon" />
               </a>
@@ -94,7 +94,7 @@ function Contact() {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title" onClick={() => handleShowToast()}>o escribeme sobre tu proyecto</h3>
+          <h3 className="contact__title">o escribeme sobre tu proyecto</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
@@ -128,7 +128,7 @@ function Contact() {
 
             <button className="button button--flex">
               Enviar mensaje
-              <UilMessage className="button__icon" />
+              <RiSendPlaneFill className="button__icon" />
             </button>
           </form>
         </div>

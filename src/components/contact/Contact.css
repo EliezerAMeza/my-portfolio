@@ -32,7 +32,7 @@
 
 .contact__card-icon {
   font-size: 2rem;
-  color: var(--color-principal);
+  color: var(--color-base-light);
   margin-bottom: var(--mb-0-25);
 }
 

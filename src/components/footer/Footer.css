@@ -4,7 +4,7 @@
 }
 
 .footer__container {
-  padding: 2rem 0 1rem 0 ;
+  padding: 2rem 0 1rem 0;
 }
 
 .footer__title,
@@ -55,6 +55,7 @@
 
 .footer__copy {
   margin-top: 3rem;
+
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--color-principal);
@@ -81,6 +82,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .footer__copy {
+    /* margin-bottom: var(--header-height); */
+  }
 }
 
 /* For small devices */
