@@ -7,8 +7,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutgoingMail } from "react-icons/md";
 import { RiSendPlaneFill } from "react-icons/ri";
 
-
-
 // ?=============== EMAILJS
 import emailjs from "@emailjs/browser";
 
@@ -29,7 +27,6 @@ function Contact() {
       )
       .then(
         (result) => {
-          //   console.log(result.text);
           handleShowToast();
         },
         (error) => {
@@ -49,10 +46,6 @@ function Contact() {
       setToastState(false);
     }, 5000);
   }
-
-  useEffect(() => {
-    handleShowToast();
-  }, []);
 
   return (
     <section className="contact section" id="contact">

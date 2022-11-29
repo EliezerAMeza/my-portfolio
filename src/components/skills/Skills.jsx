@@ -8,14 +8,14 @@ import { ImHtmlFive, ImDatabase } from "react-icons/im";
 import { CgFigma } from "react-icons/cg";
 
 // ? IMG
-import skillImage_html from "../../assets/img/html.png";
-import skillImage_css from "../../assets/img/css.png";
-import skillImage_js from "../../assets/img/js.png";
-import skillImage_sass from "../../assets/img/sass.png";
-import skillImage_angular from "../../assets/img/angular.png";
-import skillImage_react from "../../assets/img/react.png";
-import skillImage_pyton from "../../assets/img/pyton.png";
-import skillImage_postgreSQL from "../../assets/img/postgreSQL.png";
+import skillImage_html from "../../assets/img/skills/frontend/html.png";
+import skillImage_css from "../../assets/img/skills/frontend/css.png";
+import skillImage_js from "../../assets/img/skills/frontend/js.png";
+import skillImage_sass from "../../assets/img/skills/frontend/sass.png";
+import skillImage_angular from "../../assets/img/skills/frontend/angular.png";
+import skillImage_react from "../../assets/img/skills/frontend/react.png";
+import skillImage_pyton from "../../assets/img/skills/backend/pyton.png";
+import skillImage_postgreSQL from "../../assets/img/skills/backend/postgreSQL.png";
 
 import "./Skills.css";
 

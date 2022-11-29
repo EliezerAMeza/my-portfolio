@@ -1,0 +1,24 @@
+.cursor {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  border: 2px solid var(--color-base-light);
+
+  transition: 0.02s all ease;
+
+  pointer-events: none;
+
+  z-index: 10000;
+}
+
+@media screen and (max-width: 768px) {
+  .cursor {
+    border: none;
+  }
+}
