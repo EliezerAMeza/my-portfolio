@@ -16,6 +16,7 @@ function Projects() {
         {projectsSource.map((project) => {
           return (
             <Project
+              key={project.id}
               _title={project.title}
               _description={project.description}
               _imgURL={project.imgURL}

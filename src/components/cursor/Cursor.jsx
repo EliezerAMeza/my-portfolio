@@ -1,15 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+
+import { GeneralContext } from "../../context/generalContext";
 
 import "./Cursor.css";
 
 function Cursor() {
+  const { useScreenSize } = useContext(GeneralContext);
+  const { SCREEN_WIDTH } = useScreenSize();
+
   useEffect(() => {
+    if (SCREEN_WIDTH <= 768) return;
+
     const header = document.querySelector(".header");
 
     document.addEventListener("mousemove", (e) => {
       const cursor = document.querySelector("#cursor");
 
-      // console.log(cursor);
       const positionX = e.pageX - 10;
       const positionY = e.pageY - 10;
 

@@ -4,7 +4,7 @@ function ScrollDown() {
   return (
     <div className="home__scroll">
       <a href="#about" className="home__scroll-button button--flex">
-        <svg
+        {/* <svg
           width="32px"
           height="32px"
           class="home__scroll-mouse"
@@ -38,7 +38,7 @@ function ScrollDown() {
               strokeWidth: "20px",
             }}
           ></path>
-        </svg>
+        </svg> */}
 
         <span className="home__scroll-name">Scroll Down</span>
         <i className="uil uil-arrow-down home__scroll-arrow"></i>

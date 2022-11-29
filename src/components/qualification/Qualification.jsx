@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { BsFillCalendarFill } from "react-icons/bs";
+import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 import "./Qualification.css";
 
@@ -27,7 +28,7 @@ function Qualification() {
             }
             onClick={() => setTabCurrent(1)}
           >
-            <i className="uil uil-graduation-cap qualification__icon"></i>
+            <FaGraduationCap className="qualification__icon" />
             Educacion
           </div>
 
@@ -39,7 +40,7 @@ function Qualification() {
             }
             onClick={() => setTabCurrent(2)}
           >
-            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            <FaBriefcase className="qualification__icon" />
             Experiencia
           </div>
         </div>
@@ -98,7 +99,7 @@ function Qualification() {
                     target="_target"
                     className="qualification__link"
                   >
-                     Spartan Techs S.A
+                    Spartan Techs S.A
                   </a>
                 </span>
 

@@ -1,10 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+import { GeneralContextProvider } from "./context/generalContext";
+
 import App from "./App";
+
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <GeneralContextProvider>
+      <App />
+    </GeneralContextProvider>
   </React.StrictMode>
 );
