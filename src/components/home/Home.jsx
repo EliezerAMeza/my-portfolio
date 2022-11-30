@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Social from "./Social";
 import Data from "./Data";
@@ -6,16 +6,15 @@ import Data from "./Data";
 import "./Home.css";
 
 function Home() {
+  useEffect(() => {
+    const profile = document.querySelector(".home__img");
+    profile.classList.add("profile__entrance");
 
-
-  setTimeout(() => {
-    const profile = document.querySelector('.home__img')
-
-    profile.classList.remove('profile__entrance')
-    profile.classList.add('profile__animate')
-    
-  }, 5000);
-
+    setTimeout(() => {
+      profile.classList.remove("profile__entrance");
+      profile.classList.add("profile__animate");
+    }, 5000);
+  }, []);
 
   return (
     <section className="home section" id="home">
@@ -23,13 +22,11 @@ function Home() {
         <div className="home__content grid">
           <Social />
 
-          <div className="home__img profile__entrance"></div>
+          <div className="home__img"></div>
 
           <Data />
         </div>
       </div>
-
-
     </section>
   );
 }

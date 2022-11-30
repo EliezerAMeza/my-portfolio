@@ -6,22 +6,21 @@
   --header-height: 3rem;
 
   /* ?=============== Colors ===============? */
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --color-base-dark: #0d090f;
+  --color-base-dark: #110c19;
   --color-base-dark-opa-low: #0d090fb9;
   --color-base-dark-opa-hard: #0d090f80;
-  --color-base-middle: #6a6072;
+  --color-base-middle: #666072;
   --color-base-middle-opa-low: #6a6072b9;
   --color-base-middle-opa-hard: #6a607280;
-  --color-base-lite: #9583a5;
+  --color-base-lite: #9183a5;
   --color-base-lite-opa-low: #9583a5b9;
   --color-base-lite-opa-hard: #9583a580;
   --color-base-light: #f5f5f5;
   --color-base-light-opa-low: #f5f5f5b9;
   --color-base-light-opa-hard: #f5f5f580;
 
-  --color-principal-dark: #4b277d;
-  --color-principal: #7037ac;
+  --color-principal-dark: #461995;
+  --color-principal: #6341c7;
 
   --color-secondary: #9583a5;
 
@@ -75,34 +74,28 @@
 
 /* !----- 
 
-  ?violet stylus 1
+  ?violet stylus
   --color-base-dark: #0d090f;
-  --color-base-middle: #474449;
-  --color-base-lite: #817f82;
+  --color-base-dark-opa-low: #0d090fb9;
+  --color-base-dark-opa-hard: #0d090f80;
+  --color-base-middle: #6a6072;
+  --color-base-middle-opa-low: #6a6072b9;
+  --color-base-middle-opa-hard: #6a607280;
+  --color-base-lite: #9583a5;
+  --color-base-lite-opa-low: #9583a5b9;
+  --color-base-lite-opa-hard: #9583a580;
   --color-base-light: #f5f5f5;
+  --color-base-light-opa-low: #f5f5f5b9;
+  --color-base-light-opa-hard: #f5f5f580;
 
-  --color-principal-dark: #411155;
-  --color-principal: #74199b;
-  --color-principal-alt: #843aa4;
+  --color-principal-dark: #4b277d;
+  --color-principal: #7037ac;
 
-  --color-secondary: #9330a8;
-
-  ?violet stylus 2
-  --color-base-dark: #0d090f;
-  --color-base-middle: #8483a5;
-  --color-base-lite: #817f82;
-  --color-base-light: #f5f5f5;
-
-  --color-principal-dark: #411155;
-  --color-principal: #74199b;
-  --color-principal-alt: #843aa4;
-
-  --color-secondary: #9330a8;
+  --color-secondary: #9583a5;
 
   
 
   ?blue oceanic
-
   --color-base-dark: #242433;
   --color-base-middle: #4C4B63;
   --color-base-lite: #67677c;

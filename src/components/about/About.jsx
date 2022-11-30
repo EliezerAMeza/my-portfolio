@@ -4,7 +4,8 @@ import Info from "./Info";
 
 import "./About.css";
 
-import { UilFileDownload } from "@iconscout/react-unicons";
+import { FaFileDownload } from "react-icons/fa";
+
 
 import AboutImg from "../../assets/img/me.webp";
 
@@ -29,8 +30,8 @@ function About() {
           </p>
 
           <a download="" href={CV} className="button button--flex">
-            Descargar curriculum
-            <UilFileDownload className="button__icon" />
+            Curriculum
+            <FaFileDownload className="button__icon" />
           </a>
         </div>
       </div>

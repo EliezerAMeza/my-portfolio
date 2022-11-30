@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import { createContext } from "react";
+import { IoLogoHackernews } from "react-icons/io5";
 
 import useScreenSize from "../Hooks/useScreenSize.jsx";
 
 export const GeneralContext = createContext();
 
 export function GeneralContextProvider({ children }) {
-
-  // ?-- cursor circle 
-  
+  let currentScroll = 0;
 
   // ?-- to block scroll animation
   const [scrollController, setScrollController] = useState(false);
@@ -53,8 +52,34 @@ export function GeneralContextProvider({ children }) {
     }
   }
 
+  function showHeader(_state) {
+    const header = document.querySelector(".header");
+
+    if (_state == true) {
+      header.classList.add("scroll-header");
+    } else {
+      header.classList.remove("scroll-header");
+    }
+  }
+
+  useEffect(() => {
+    const overview = document.getElementById("container-all");
+
+    overview.addEventListener("scroll", (e) => {
+      if (overview.scrollTop < currentScroll) {
+        setTimeout(() => {
+          showHeader(true);
+        }, 500);
+      } else {
+        showHeader(false);
+      }
+
+      currentScroll = overview.scrollTop;
+    });
+  }, []);
+
   return (
-    <GeneralContext.Provider value={{ useScreenSize, scrollTo }}>
+    <GeneralContext.Provider value={{ useScreenSize, showHeader, scrollTo }}>
       {children}
     </GeneralContext.Provider>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { UilMessage } from "@iconscout/react-unicons";
+import { RiSendPlaneFill } from "react-icons/ri";
 
 function Data() {
   return (
@@ -15,7 +15,7 @@ function Data() {
 
       <a href="#contact" className="button button--flex home__button">
         Contactame
-        <UilMessage className="button__icon" />
+        <RiSendPlaneFill className="button__icon" />
       </a>
     </div>
   );

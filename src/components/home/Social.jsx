@@ -1,26 +1,18 @@
 import React from "react";
 
-import { UilInstagram, UilLinkedinAlt } from "@iconscout/react-unicons";
+import { GrInstagram } from "react-icons/gr";
+import { BsLinkedin } from "react-icons/bs";
 
 function Social() {
-  // return <div></div>
-
   return (
     <div className="home__social">
       <a href="#" className="home__social-icon" target="_blank">
-        <UilInstagram />
+        <GrInstagram />
       </a>
 
       <a href="#" className="home__social-icon" target="_blank">
-        <UilLinkedinAlt />
+        <BsLinkedin />
       </a>
-
-      {/* <a href="#" className="home__social-icon" target="_blank">
-        <i className="uil uil-dribbble"></i>
-      </a>
-      <a href="#" className="home__social-icon" target="_blank">
-        <i className="uil uil-github-alt"></i>
-      </a> */}
     </div>
   );
 }

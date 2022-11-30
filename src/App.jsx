@@ -30,6 +30,11 @@ function App() {
         <Skills />
         <About />
         <Projects />
+
+        {/* <Testimonials /> */}
+
+        
+
         <Contact />
       </main>
 

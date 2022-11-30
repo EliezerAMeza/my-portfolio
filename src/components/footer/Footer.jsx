@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
-import { UilInstagram, UilLinkedinAlt } from "@iconscout/react-unicons";
+import { GrInstagram } from "react-icons/gr";
+import { BsLinkedin } from "react-icons/bs";
 
 import "./Footer.css";
 
@@ -45,13 +46,11 @@ function Footer() {
         </ul> */}
         <div className="footer__social">
           <a href="#" className="footer__social-link" target="_blank">
-          <UilInstagram />
+            <GrInstagram />
           </a>
           <a href="#" className="footer__social-link" target="_blank">
-<UilLinkedinAlt />
+            <BsLinkedin />
           </a>
-
-         
         </div>
         <div className="footer__copy">
           &copy; _________ | All rigths reserved
