@@ -1,3 +1,5 @@
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+
 // ? COMPONENTS
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
@@ -19,30 +21,59 @@ import "./_global.css";
 import "./App.css";
 
 function App() {
-  
   return (
-    <div className="container-all" id="container-all">
-      <Header />
+    <BrowserRouter>
+      <header>
+        <Link to="/"> home</Link>
+        <Link to="/skills"> skills</Link>
+        <Link to="/qualification"> qualification</Link>
+        <Link to="/contact"> contact</Link>
+        <Link to="/about"> about</Link>
+        <Link to="/projects"> projects</Link>
+      </header>
 
-      <main className="main">
+<Switch>
+      <Route path="/">
         <Home />
-        <Qualification />
+      </Route>
+      <Route path="/Skills">
         <Skills />
-        <About />
-        <Projects />
-
-        {/* <Testimonials /> */}
-
-        
-
+      </Route>
+      <Route path="/Qualification">
+        <Qualification />
+      </Route>
+      <Route path="/Contact">
         <Contact />
-      </main>
+      </Route>
+      <Route path="/About">
+        <About />
+      </Route>
+      <Route path="/Projects">
+        <Projects />
+      </Route>
+      </Switch>
+    </BrowserRouter>
 
-      <Footer />
+    // <div className="container-all" id="container-all">
+    //   <Header />
 
-      <Cursor />
-      <ScrollUp />
-    </div>
+    //   <main className="main">
+    //     <Home />
+    //     <Qualification />
+    //     <Skills />
+    //     <About />
+    //     <Projects />
+
+    //     {/* <Testimonials /> */}
+
+    //     <Contact />
+    //   </main>
+
+    //   <Footer />
+
+    //   <Cursor />
+    //   <ScrollUp />
+    // </div>
   );
 }
 

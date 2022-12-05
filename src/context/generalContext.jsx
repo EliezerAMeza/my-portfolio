@@ -63,6 +63,7 @@ export function GeneralContextProvider({ children }) {
   }
 
   useEffect(() => {
+    /*
     const overview = document.getElementById("container-all");
 
     overview.addEventListener("scroll", (e) => {
@@ -76,6 +77,7 @@ export function GeneralContextProvider({ children }) {
 
       currentScroll = overview.scrollTop;
     });
+    */
   }, []);
 
   return (
